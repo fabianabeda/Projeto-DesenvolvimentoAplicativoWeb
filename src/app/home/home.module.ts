@@ -5,12 +5,14 @@ import { CarrosselComponent } from './carrossel/carrossel.component';
 import { ExperienciasComponent } from './experiencias/experiencias.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
+  declarations: [
     PesquisaComponent,
     CarrosselComponent,
     ExperienciasComponent,
+  ],
+  imports: [
+    CommonModule,
+    
   ]
 })
 export class HomeModule { }
