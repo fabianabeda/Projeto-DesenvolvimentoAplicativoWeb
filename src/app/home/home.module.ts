@@ -5,12 +5,16 @@ import { CarrosselComponent } from './carrossel/carrossel.component';
 import { ExperienciasComponent } from './experiencias/experiencias.component';
 
 import { MatCardModule} from '@angular/material/card';
+import { ContentComponent } from './content/content.component';
+
 
 @NgModule({
   declarations: [
     PesquisaComponent,
     CarrosselComponent,
     ExperienciasComponent,
+    ContentComponent,
+    
     
   ],
   imports: [
@@ -19,9 +23,7 @@ import { MatCardModule} from '@angular/material/card';
     
   ],
   exports:[
-    PesquisaComponent,
-    CarrosselComponent,
-    ExperienciasComponent,
+    ContentComponent
   ]
 })
 export class HomeModule { }
