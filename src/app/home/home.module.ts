@@ -4,14 +4,18 @@ import { PesquisaComponent } from './pesquisa/pesquisa.component';
 import { CarrosselComponent } from './carrossel/carrossel.component';
 import { ExperienciasComponent } from './experiencias/experiencias.component';
 
+import { MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
     PesquisaComponent,
     CarrosselComponent,
     ExperienciasComponent,
+    
   ],
   imports: [
     CommonModule,
+    MatCardModule,
     
   ],
   exports:[
