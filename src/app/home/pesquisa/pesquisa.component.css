@@ -1,0 +1,18 @@
+.pesquisa .pes-titulo{
+    line-height: 30px;
+}
+
+.pesquisa .pes-input{
+    width: 100%;
+    font-size: 16px;
+}
+
+.pesquisa .pes-botao{margin: 0px;}
+.pesquisa button{
+    width: 100%;
+    background: #535353;
+    
+    color: white;
+    
+
+}

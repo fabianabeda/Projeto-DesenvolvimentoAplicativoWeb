@@ -1,11 +1,15 @@
+import { MatButtonModule } from '@angular/material/button';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
 import { CarrosselComponent } from './carrossel/carrossel.component';
 import { ExperienciasComponent } from './experiencias/experiencias.component';
 
-import { MatCardModule} from '@angular/material/card';
 import { ContentComponent } from './content/content.component';
+
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule} from '@angular/material/card';
+import { MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -15,12 +19,15 @@ import { ContentComponent } from './content/content.component';
     ExperienciasComponent,
     ContentComponent,
     
-    
   ],
   imports: [
     CommonModule,
     MatCardModule,
-    
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+
+  
   ],
   exports:[
     ContentComponent
