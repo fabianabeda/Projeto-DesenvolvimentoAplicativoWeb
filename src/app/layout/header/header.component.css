@@ -1,7 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 .toolbar{
     background: rgb(201, 201, 201);
 }
 
 .toolbar .space-h{
-    
+    flex: 1 1 auto;
+}
+
+.toolbar .bt-favorito{ margin: 10px;}
+.toolbar .bt-favorito button{
+    background: rgb(83, 83, 83);
+}
+
+.toolbar .bt-perfil button{
+    background: rgb(83, 83, 83);
 }

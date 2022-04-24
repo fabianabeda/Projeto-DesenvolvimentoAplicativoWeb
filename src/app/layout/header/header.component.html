@@ -1,6 +1,18 @@
 <mat-toolbar class="toolbar">
-    <div class="logo">a</div>
+    <div class="logo">Logo</div>
     <span class="space-h"></span>
-    <div class="bt-favorito">b</div>
-    <div class="bt-perfil">c</div>
+    <div class="bt-favorito">
+        <button mat-mini-fab>
+            <mat-icon>
+                favorite
+            </mat-icon>
+        </button>
+    </div>
+    <div class="bt-perfil">
+        <button mat-mini-fab [routerLink]="['/login']">
+            <mat-icon>
+                person
+            </mat-icon>
+        </button>
+    </div>
 </mat-toolbar>
