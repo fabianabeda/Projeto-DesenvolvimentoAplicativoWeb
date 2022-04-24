@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CadastrarUsuarioComponent } from './cadastrar-usuario.component/cadastrar-usuario.component';
-import { LoginUsuarioComponent } from './login-usuario.component/login-usuario.component';
-import { PerfilUsuarioComponent } from './perfil-usuario.component/perfil-usuario.component';
+import { CadastrarUsuarioComponent } from './cadastrar-usuario/cadastrar-usuario.component';
+import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
+import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 
 @NgModule({
   declarations: [
