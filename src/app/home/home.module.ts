@@ -13,6 +13,11 @@ import { ExperienciasComponent } from './experiencias/experiencias.component';
   imports: [
     CommonModule,
     
+  ],
+  exports:[
+    PesquisaComponent,
+    CarrosselComponent,
+    ExperienciasComponent,
   ]
 })
 export class HomeModule { }

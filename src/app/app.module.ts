@@ -1,3 +1,5 @@
+import { LayoutModule } from './layout/layout.module';
+import { HomeModule } from './home/home.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,7 +15,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HomeModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
