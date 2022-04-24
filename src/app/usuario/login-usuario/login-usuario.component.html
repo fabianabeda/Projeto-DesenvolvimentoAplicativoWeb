@@ -1,0 +1,17 @@
+<mat-card class="card-insercao-usuario">
+    <mat-card-header>
+      <mat-card-title>Faça o login ou crie uma conta</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field appearance="fill" class="mat-form-simples">
+        <mat-label>E-mail</mat-label>
+        <input matInput [(ngModel)]="usuario.nome" placeholder="digite o e-mail">
+      </mat-form-field>
+    </mat-card-content>
+  
+    <mat-card-footer>
+      <button mat-raised-button mat-icon-button color="primary" (click)="inserirUsuario()">
+    
+      </button>
+    </mat-card-footer>
+  </mat-card>

@@ -1,3 +1,4 @@
+import { USUARIO } from './../../../share/usuario';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginUsuarioComponent implements OnInit {
 
-  constructor() { }
+  usuario:USUARIO
+
+  constructor() { 
+    this.usuario = new USUARIO()
+  }
 
   ngOnInit(): void {
   }
-
+  inserirUsuario(){}
 }
