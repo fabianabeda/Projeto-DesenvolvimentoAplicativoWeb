@@ -1,0 +1,33 @@
+<mat-card class="card-insercao-imovel">
+    <mat-card-title class="inser-titulo">
+        Endereço do imovel
+    </mat-card-title>
+    <mat-form-field class="inser-input" appearance="outline">
+        <mat-label>Estado</mat-label>
+        <input placeholder="Estado" matInput>
+    </mat-form-field>
+    <mat-form-field class="inser-input" appearance="outline">
+        <mat-label>Cidade</mat-label>
+        <input placeholder="Cidade" matInput>
+    </mat-form-field>
+    <mat-form-field class="inser-input" appearance="outline">
+        <mat-label>Bairro</mat-label>
+        <input placeholder="Bairro" matInput>
+    </mat-form-field>
+    <mat-form-field class="inser-input" appearance="outline">
+        <mat-label>Rua</mat-label>
+        <input placeholder="Rua" matInput>
+    </mat-form-field>
+    <mat-form-field class="inser-input" appearance="outline">
+        <mat-label>Numero</mat-label>
+        <input placeholder="Numero do imovel" matInput>
+    </mat-form-field>
+    <mat-form-field class="inser-input" appearance="outline">
+        <mat-label>CEP</mat-label>
+        <input placeholder="CEP" matInput>
+    </mat-form-field>
+    <mat-card-actions class="next">
+        <button [routerLink]="['/cadastro-imovel-comodos']" mat-raised-button mat-button>Proximo</button>
+    </mat-card-actions>
+
+</mat-card>

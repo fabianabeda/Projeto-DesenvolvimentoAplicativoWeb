@@ -12,7 +12,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { RouterModule } from '@angular/router';
-import { CadastroImovelComponent } from './cadastro-imovel/cadastro-imovel.component';
 
 
 
@@ -21,7 +20,7 @@ import { CadastroImovelComponent } from './cadastro-imovel/cadastro-imovel.compo
     CadastrarUsuarioComponent ,
     LoginUsuarioComponent,
     PerfilUsuarioComponent,
-    CadastroImovelComponent,
+    
   ],
   imports: [
     CommonModule,

@@ -1,3 +1,4 @@
+import { ImovelModule } from './imovel/imovel.module';
 import { LayoutModule } from './layout/layout.module';
 import { HomeModule } from './home/home.module';
 import { NgModule } from '@angular/core';
@@ -6,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UsuarioModule } from './usuario/usuario.module';
+
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import { UsuarioModule } from './usuario/usuario.module';
     HomeModule,
     LayoutModule,
     UsuarioModule,
+    ImovelModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

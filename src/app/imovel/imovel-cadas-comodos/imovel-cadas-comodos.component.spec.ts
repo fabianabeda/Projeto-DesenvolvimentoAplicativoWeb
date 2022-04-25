@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CadastroImovelComponent } from './cadastro-imovel.component';
+import { ImovelCadasComodosComponent } from './imovel-cadas-comodos.component';
 
-describe('CadastroImovelComponent', () => {
-  let component: CadastroImovelComponent;
-  let fixture: ComponentFixture<CadastroImovelComponent>;
+describe('ImovelCadasComodosComponent', () => {
+  let component: ImovelCadasComodosComponent;
+  let fixture: ComponentFixture<ImovelCadasComodosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CadastroImovelComponent ]
+      declarations: [ ImovelCadasComodosComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CadastroImovelComponent);
+    fixture = TestBed.createComponent(ImovelCadasComodosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

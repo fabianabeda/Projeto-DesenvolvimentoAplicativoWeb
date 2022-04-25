@@ -3,6 +3,10 @@ import { ContentComponent } from './home/content/content.component';
 import { CadastrarUsuarioComponent } from './usuario/cadastrar-usuario/cadastrar-usuario.component';
 import { PerfilUsuarioComponent } from './usuario/perfil-usuario/perfil-usuario.component';
 import { LoginUsuarioComponent } from './usuario/login-usuario/login-usuario.component';
+import { ImovelCadasEnderecoComponent } from './imovel/imovel-cadas-endereco/imovel-cadas-endereco.component';
+import { ImovelCadasComodosComponent } from './imovel/imovel-cadas-comodos/imovel-cadas-comodos.component';
+import { ImovelCadasDescricaoComponent } from './imovel/imovel-cadas-descricao/imovel-cadas-descricao.component';
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -20,6 +24,18 @@ const routes: Routes = [
   },
   {path:'perfil-usuario',
     component:PerfilUsuarioComponent
+  },
+  {
+    path:'cadastro-imovel-endereco',
+    component:ImovelCadasEnderecoComponent
+  },
+  {
+    path:'cadastro-imovel-comodos',
+    component:ImovelCadasComodosComponent
+  },
+  {
+    path:'cadastro-imovel-descricao',
+    component:ImovelCadasDescricaoComponent
   }
 ];
 

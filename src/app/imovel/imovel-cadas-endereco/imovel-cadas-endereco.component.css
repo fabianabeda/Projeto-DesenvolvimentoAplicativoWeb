@@ -1,0 +1,7 @@
+.card-insercao-imovel .inser-input, .next button{
+    width: 100%;
+}
+
+.next button{
+    background: #535353;
+}
