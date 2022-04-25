@@ -1,0 +1,28 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.card-insercao-usuario .inser-titulo{
+    line-height: 30px;
+  }
+  
+  .card-insercao-usuario .inser-input{
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .card-insercao-usuario .inser-botao{margin: 0px;
+}
+  .card-insercao-usuario .inser-botao button{
+    width: 100%;
+    background: #535353;
+    
+    color: white;
+  }   
+  .card-insercao-usuario .login-footer button{
+      width: 100%;
+  }

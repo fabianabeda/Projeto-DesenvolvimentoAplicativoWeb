@@ -1,22 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
+.cadastro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card-insercao-usuario .inser-titulo{
+  line-height: 30px;
+  text-align: center;
 }
 
-
-.toolbar{
-    background: rgb(201, 201, 201);
+.card-insercao-usuario .inser-input{
+  width: 100%;
+  font-size: 16px;
 }
 
-.toolbar .space-h{
-    flex: 1 1 auto;
-}
-
-.toolbar .bt-favorito{ margin: 10px;}
-.toolbar .bt-favorito button{
-    background: rgb(83, 83, 83);
-}
-
-.toolbar .bt-perfil button{
-    background: rgb(83, 83, 83);
-}
+.card-insercao-usuario .inser-botao{margin: 0px;}
+.card-insercao-usuario button{
+  width: 100%;
+  background: #535353;
+  
+  color: white;
+}                                       

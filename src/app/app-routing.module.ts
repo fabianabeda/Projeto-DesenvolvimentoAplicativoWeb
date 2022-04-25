@@ -12,13 +12,13 @@ const routes: Routes = [
     component:ContentComponent
   },
 
-  {path:'login',
+  {path:'login-usuario',
     component:LoginUsuarioComponent
   },
-  {path:'cadastro-usuario',
+  {path:'cadastrar-usuario',
     component:CadastrarUsuarioComponent
   },
-  {path:'perfil',
+  {path:'perfil-usuario',
     component:PerfilUsuarioComponent
   }
 ];

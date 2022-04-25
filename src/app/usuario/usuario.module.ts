@@ -8,8 +8,11 @@ import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.componen
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { RouterModule } from '@angular/router';
+import { CadastroImovelComponent } from './cadastro-imovel/cadastro-imovel.component';
 
 
 
@@ -18,6 +21,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CadastrarUsuarioComponent ,
     LoginUsuarioComponent,
     PerfilUsuarioComponent,
+    CadastroImovelComponent,
   ],
   imports: [
     CommonModule,
@@ -25,6 +29,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FormsModule,
     MatFormFieldModule,
     MatIconModule,
+    MatButtonModule,
+    MatInputModule,
+    RouterModule,
     
   ],
   exports:[
