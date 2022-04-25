@@ -1,0 +1,14 @@
+
+.card-insercao-imovel .inser-titulo{
+    margin-bottom: 20px;
+}
+
+.card-insercao-imovel .inser-input{
+    width: 100%;
+}
+
+
+.card-insercao-imovel .next button{
+    background: #535353;
+    width: 100%;
+}
