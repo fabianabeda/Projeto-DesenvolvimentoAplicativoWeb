@@ -4,22 +4,22 @@
     </mat-card-title>
     <mat-form-field class="inser-input" appearance="outline">
         <mat-label>Quartos</mat-label>
-        <input placeholder="Quartos" matInput>
+        <input [(ngModel)]="imovel.quartos" placeholder="Quartos" matInput>
     </mat-form-field>
     <mat-form-field class="inser-input" appearance="outline">
         <mat-label>Banheiros</mat-label>
-        <input placeholder="Banheiros" matInput>
+        <input [(ngModel)]="imovel.banheiros" placeholder="Banheiros" matInput>
     </mat-form-field>
     <mat-form-field class="inser-input" appearance="outline">
         <mat-label>Garagem</mat-label>
-        <input placeholder="Garagem" matInput>
+        <input [(ngModel)]="imovel.garagem" placeholder="Garagem" matInput>
     </mat-form-field>
     <mat-form-field class="inser-input" appearance="outline">
         <mat-label>Capacidade</mat-label>
-        <input placeholder="Capacidade" matInput>
+        <input [(ngModel)]="imovel.capacidade" placeholder="Capacidade" matInput>
     </mat-form-field>
     <mat-card-actions class="next">
-        <button [routerLink]="['/cadastro-imovel-descricao']" mat-raised-button mat-button>Proximo</button>
+        <button  [routerLink]="['/cadastro-imovel-descricao']" mat-raised-button mat-button>Proximo</button>
     </mat-card-actions>
 
 </mat-card>

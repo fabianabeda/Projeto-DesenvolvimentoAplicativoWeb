@@ -6,7 +6,7 @@ export class Imovel{
     numero:string ='';
     cep:string ='';
     quartos:string ='';
-    Banheiros:string ='';
+    banheiros:string ='';
     garagem:string ='';
     capacidade:string ='';
     descricao:string ='';

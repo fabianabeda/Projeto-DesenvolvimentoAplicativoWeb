@@ -1,4 +1,5 @@
-import { usuarios } from './../usuarios';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 import { USUARIO } from './../usuario';
 
 import { Injectable } from '@angular/core';
@@ -7,23 +8,18 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UsuarioService {
-  
-  usuarios:Array<USUARIO>;
 
-  usuario:USUARIO;
+  url = 'http://localhost:3000/usuarios'
 
-  constructor() { 
-    this.usuarios = usuarios;
-    this.usuario = new USUARIO()
+  constructor(private httpClient: HttpClient) { 
   }
 
-  listar(): Array<USUARIO>{
-    return this.usuarios;
-  }
+  // listar(): Array<USUARIO>{
+  //   return this.usuarios;
+  // }
 
-  inserir() :void{
-    this.usuarios.push(this.usuario)
-    this.usuario = new USUARIO()
+  inserir(usuario:USUARIO): Observable<USUARIO>{
+    return this.httpClient.post<USUARIO>(this.url,usuario)
   }
 
 }

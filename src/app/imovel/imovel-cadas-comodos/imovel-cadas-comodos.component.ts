@@ -1,3 +1,4 @@
+import { Imovel } from './../../share/imovel';
 import { ImovelService } from './../../share/services/imovel.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./imovel-cadas-comodos.component.css']
 })
 export class ImovelCadasComodosComponent implements OnInit {
-
-  constructor(private ImovelService:ImovelService) {
-
+  imovel:Imovel
+  constructor(private imovelService:ImovelService) {
+    this.imovel = this.imovelService.getImovel()
   }
 
   ngOnInit(): void {

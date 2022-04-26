@@ -1,29 +1,38 @@
-import { usuarios } from './../usuarios';
-import { imoveis } from './../imoveis';
 import { Imovel } from './../imovel';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class ImovelService {
-
+  
+  url = 'http://localhost:3000/imoveis';
   imovel: Imovel;
-  imoveis: Array<Imovel>;
+  // imoveis: Array<Imovel>;
 
-  constructor() {
-    this.imovel = new Imovel();
-    this.imoveis = imoveis;
-   } 
 
-  listar():Array<Imovel>{
-     return this.imoveis;
+  constructor( private httpCliente:HttpClient) {
+    this.imovel = new Imovel()
+  } 
+
+  listar():Observable<Imovel[]>{
+    return this.httpCliente.get<Array<Imovel>>(this.url);
   }
 
-  inserir():void{
-    this.imoveis.push(this.imovel);
-    this.imovel = new Imovel();
+  passImovel(imovel: Imovel) {
+    this.imovel = imovel
+  }
+
+  getImovel():Imovel{
+    return this.imovel
+  }
+
+  inserir():Observable<Imovel>{
+    return this.httpCliente.post<Imovel>(this.url,this.imovel)
   }
 
 

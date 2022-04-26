@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ImovelModule } from './imovel/imovel.module';
 import { LayoutModule } from './layout/layout.module';
 import { HomeModule } from './home/home.module';
@@ -22,6 +23,7 @@ import { UsuarioModule } from './usuario/usuario.module';
     LayoutModule,
     UsuarioModule,
     ImovelModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
-import { USUARIO } from './../../../share/usuario';
+import { UsuarioService } from './../../share/services/usuario.service';
+import { USUARIO } from './../../share/usuario';
 import { Component, OnInit } from '@angular/core';
-
+ 
 @Component({
   selector: 'app-usuario',
   templateUrl: './login-usuario.component.html',
@@ -10,11 +11,13 @@ export class LoginUsuarioComponent implements OnInit {
 
   usuario:USUARIO
 
-  constructor() { 
+  constructor(private UsuarioService:UsuarioService) { 
     this.usuario = new USUARIO()
   }
 
   ngOnInit(): void {
   }
-  inserirUsuario(){}
+  buscarUsuario(){
+    
+  }
 }

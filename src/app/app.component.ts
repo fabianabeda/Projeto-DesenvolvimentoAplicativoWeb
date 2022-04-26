@@ -1,5 +1,3 @@
-import { Imoveis } from './share/imoveis';
-import { Imovel } from './../share/imovel';
 import { Component } from '@angular/core';
 
 @Component({

@@ -4,30 +4,30 @@
     </mat-card-title>
     <mat-form-field class="inser-input" appearance="outline">
         <mat-label>Estado</mat-label>
-        <input placeholder="Estado" matInput>
+        <input [(ngModel)]="imovel.estado" placeholder="Estado" matInput>
     </mat-form-field>
     <mat-form-field class="inser-input" appearance="outline">
         <mat-label>Cidade</mat-label>
-        <input placeholder="Cidade" matInput>
+        <input [(ngModel)]="imovel.cidade" placeholder="Cidade" matInput>
     </mat-form-field>
     <mat-form-field class="inser-input" appearance="outline">
         <mat-label>Bairro</mat-label>
-        <input placeholder="Bairro" matInput>
+        <input [(ngModel)]="imovel.bairro" placeholder="Bairro" matInput>
     </mat-form-field>
     <mat-form-field class="inser-input" appearance="outline">
         <mat-label>Rua</mat-label>
-        <input placeholder="Rua" matInput>
+        <input [(ngModel)]="imovel.rua" placeholder="Rua" matInput>
     </mat-form-field>
     <mat-form-field class="inser-input" appearance="outline">
         <mat-label>Numero</mat-label>
-        <input placeholder="Numero do imovel" matInput>
+        <input [(ngModel)]="imovel.numero" placeholder="Numero do imovel" matInput>
     </mat-form-field>
     <mat-form-field class="inser-input" appearance="outline">
         <mat-label>CEP</mat-label>
-        <input placeholder="CEP" matInput>
+        <input [(ngModel)]="imovel.cep" placeholder="CEP" matInput>
     </mat-form-field>
     <mat-card-actions class="next">
-        <button  mat-raised-button mat-button>Proximo</button>
+        <button (click)="proximo()" [routerLink]="['/cadastro-imovel-comodos']" mat-raised-button mat-button>Proximo</button>
     </mat-card-actions>
 
 </mat-card>

@@ -1,0 +1,120 @@
+{
+  "imoveis": [
+    {
+      "id": "1",
+      "estado": "PB",
+      "cidade": "João Pessoa",
+      "bairro": "Água fria",
+      "rua": "da água",
+      "numero": "123",
+      "cep": "987456321",
+      "quartos": "3",
+      "Banheiros": "2",
+      "garagem": "2",
+      "capacidade": "6",
+      "descricao": "poiuytrewqasdfghjkl,mnbvcxz"
+    },
+    {
+      "id": "2",
+      "estado": "PE",
+      "cidade": "Timbaúba",
+      "bairro": "Centro",
+      "rua": "Marechal",
+      "numero": "65",
+      "cep": "55879600",
+      "quartos": "2",
+      "Banheiros": "1",
+      "garagem": "1",
+      "capacidade": "4",
+      "descricao": "poiuyhjkloiuytrewsdfghjkmnbvcxzasxza"
+    },
+    {
+      "id": "3",
+      "estado": "CE",
+      "cidade": "Tiai",
+      "bairro": "Cerejeira",
+      "rua": "sergio muniz",
+      "numero": "56",
+      "cep": "32146963",
+      "quartos": "1",
+      "Banheiros": "1",
+      "garagem": "1",
+      "capacidade": "5",
+      "descricao": "poiuytrewqasdfghjklmnbvcxsdfghjkoiuytrew"
+    },
+    {
+      "estado": "",
+      "cidade": "",
+      "bairro": "",
+      "rua": "",
+      "numero": "",
+      "cep": "",
+      "quartos": "",
+      "Banheiros": "",
+      "garagem": "",
+      "capacidade": "",
+      "descricao": "",
+      "id": "VEiRDKB"
+    },
+    {
+      "estado": "",
+      "cidade": "",
+      "bairro": "",
+      "rua": "",
+      "numero": "",
+      "cep": "",
+      "quartos": "3",
+      "banheiros": "2",
+      "garagem": "2",
+      "capacidade": "4",
+      "descricao": "O prédio é top de mais!!!!",
+      "id": "gNmfMUw"
+    },
+    {
+      "estado": "Paraiba",
+      "cidade": "João pessoa",
+      "bairro": "Baye",
+      "rua": "Vitodia dias",
+      "numero": "102",
+      "cep": "6800698",
+      "quartos": "2",
+      "banheiros": "1",
+      "garagem": "1",
+      "capacidade": "2",
+      "descricao": "Esse Ap é top de mais!!! confia!",
+      "id": "wnyvi_J"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "messais",
+      "email": "messias@gmail.com",
+      "senha": "123456"
+    },
+    {
+      "id": "2",
+      "nome": "Fabiana",
+      "email": "Fabiana@gmail.com",
+      "senha": "987456"
+    },
+    {
+      "id": "3",
+      "nome": "Julio",
+      "email": "Julio@gmail.com",
+      "senha": "12397"
+    },
+    {
+      "nome": "vitoria",
+      "email": "vitoria@gmail.com",
+      "senha": "741852963",
+      "id": "wWLkvYW"
+    },
+    {
+      "nome": "Lucas",
+      "email": "lucas@gmail.com",
+      "senha": "741asdf",
+      "id": "1NnRykT"
+    }
+  ]
+}

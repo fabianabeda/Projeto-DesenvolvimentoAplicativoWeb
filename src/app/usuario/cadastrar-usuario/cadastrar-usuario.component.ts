@@ -1,5 +1,5 @@
-import { usuarios } from './../../../share/usuarios';
-import { USUARIO } from './../../../share/usuario';
+import { UsuarioService } from './../../share/services/usuario.service';
+import { USUARIO } from './../../share/usuario';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,18 +10,15 @@ import { Component, OnInit } from '@angular/core';
 export class CadastrarUsuarioComponent implements OnInit {
 
   usuario:USUARIO
-  usuarios = usuarios
 
-  constructor() {
+  constructor(private usuarioService:UsuarioService) { 
     this.usuario = new USUARIO()
-   }
+  }
 
   ngOnInit(): void {
   }
-
   inserirUsuario(){
-    this.usuarios.push(this.usuario)
-    this.usuario = new USUARIO()
+    this.usuarioService.inserir(this.usuario).subscribe()
   }
 
 }

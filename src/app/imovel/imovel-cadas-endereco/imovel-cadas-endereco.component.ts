@@ -1,9 +1,9 @@
-import { ImovelService } from './../../share/services/imovel.service';
-import { UsuarioService } from './../../share/services/usuario.service';
+import { Imovel } from './../../share/imovel';
 import { USUARIO } from './../../share/usuario';
+import { ImovelService } from './../../share/services/imovel.service';
 
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-imovel-cadas-endereco',
@@ -13,15 +13,19 @@ import { Router } from '@angular/router';
 
 export class ImovelCadasEnderecoComponent implements OnInit {
 
-
+  imovel :Imovel
 
   // imovel: Imovel
-  constructor( private ImovelService:ImovelService) {
-    
+  constructor( private imovelService:ImovelService) {
+      this.imovel = new Imovel()
      }
 
 
   ngOnInit(): void {
+  }
+
+  proximo(){
+    this.imovelService.passImovel(this.imovel)
   }
 
   
