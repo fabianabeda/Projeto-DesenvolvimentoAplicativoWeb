@@ -1,3 +1,4 @@
+import { ImovelService } from './../../share/services/imovel.service';
 import { UsuarioService } from './../../share/services/usuario.service';
 
 import { Component, OnInit } from '@angular/core';
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImovelCadasDescricaoComponent implements OnInit {
 
-  constructor() {
+  constructor(private ImovelService:ImovelService) {
    
    }
 

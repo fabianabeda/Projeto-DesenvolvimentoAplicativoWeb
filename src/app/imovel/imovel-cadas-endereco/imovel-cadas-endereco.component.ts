@@ -1,3 +1,4 @@
+import { ImovelService } from './../../share/services/imovel.service';
 import { UsuarioService } from './../../share/services/usuario.service';
 import { USUARIO } from './../../share/usuario';
 
@@ -15,7 +16,7 @@ export class ImovelCadasEnderecoComponent implements OnInit {
 
 
   // imovel: Imovel
-  constructor() {
+  constructor( private ImovelService:ImovelService) {
     
      }
 

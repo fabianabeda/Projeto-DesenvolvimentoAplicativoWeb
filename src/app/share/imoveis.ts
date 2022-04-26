@@ -1,4 +1,4 @@
-export let Imoveis = [
+export let imoveis = [
     {
         estado:'PB',
     cidade:'João Pessoa',
