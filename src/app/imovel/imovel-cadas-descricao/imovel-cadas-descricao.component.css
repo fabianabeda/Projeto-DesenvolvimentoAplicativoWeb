@@ -1,0 +1,14 @@
+.card-insercao-imovel .descricao{
+    width: 100%;
+    
+}
+
+.descricao textarea{
+    height: 250px;
+}
+
+.card-insercao-imovel .next button{
+    width: 100%;
+    background: #535353;
+    color: white;
+}

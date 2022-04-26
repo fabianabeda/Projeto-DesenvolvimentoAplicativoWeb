@@ -3,21 +3,24 @@
     <mat-card-title class="inser-titulo">
         Cadastre-se
     </mat-card-title>
+
     <mat-form-field class="inser-input" appearance="outline">
         <mat-label>Nome</mat-label>
-        <input placeholder="" matInput>
+        <input [(ngModel)]="usuario.nome" placeholder="" matInput>
     </mat-form-field>
+
     <mat-form-field class="inser-input" appearance="outline">
       <mat-label>E-mail</mat-label>
-      <input placeholder="" matInput>
+      <input [(ngModel)]="usuario.email" placeholder="" matInput>
   </mat-form-field>
+  
   <mat-form-field class="inser-input" appearance="outline">
     <mat-label>Senha</mat-label>
-    <input placeholder="" matInput>
+    <input [(ngModel)]="usuario.senha"  placeholder="" matInput>
 </mat-form-field>
   
      <mat-card-actions class="inser-botao">
-          <button mat-raised-button>Continuar com e-mail </button>
+          <button (click)="inserirUsuario()" mat-raised-button> Concluir </button>
       </mat-card-actions>
 </mat-card>
 </div> 

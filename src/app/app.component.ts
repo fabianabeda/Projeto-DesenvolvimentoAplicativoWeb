@@ -1,3 +1,5 @@
+import { Imoveis } from './../share/imoveis';
+import { Imovel } from './../share/imovel';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lugarcerto';
+  
+
+
 }
