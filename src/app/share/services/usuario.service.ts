@@ -14,10 +14,6 @@ export class UsuarioService {
   constructor(private httpClient: HttpClient) { 
   }
 
-  // listar(): Array<USUARIO>{
-  //   return this.usuarios;
-  // }
-
   inserir(usuario:USUARIO): Observable<USUARIO>{
     return this.httpClient.post<USUARIO>(this.url,usuario)
   }
