@@ -11,6 +11,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { RouterModule } from '@angular/router';
+import { ListarImoveisComponent } from './listar-imoveis/listar-imoveis.component';
 
 
 
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     ImovelCadasEnderecoComponent,
     ImovelCadasComodosComponent,
-    ImovelCadasDescricaoComponent
+    ImovelCadasDescricaoComponent,
+    ListarImoveisComponent
   ],
   imports: [
     CommonModule,

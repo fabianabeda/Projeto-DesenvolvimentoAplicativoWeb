@@ -1,3 +1,4 @@
+import { ListarImoveisComponent } from './imovel/listar-imoveis/listar-imoveis.component';
 import { ContentComponent } from './home/content/content.component';
 
 import { CadastrarUsuarioComponent } from './usuario/cadastrar-usuario/cadastrar-usuario.component';
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path:'cadastro-imovel-descricao',
     component:ImovelCadasDescricaoComponent
+  },
+  {
+    path:'imoveis',
+    component:ListarImoveisComponent
   }
 ];
 
