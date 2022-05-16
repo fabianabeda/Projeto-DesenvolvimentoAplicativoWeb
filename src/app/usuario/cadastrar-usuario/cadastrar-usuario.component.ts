@@ -1,4 +1,4 @@
-import { UsuarioService } from './../../share/services/usuario.service';
+import { FirestoreUsuarioService } from './../../share/services/firestore-usuario.service';
 import { USUARIO } from './../../share/usuario';
 import { Component, OnInit } from '@angular/core';
 
@@ -11,14 +11,14 @@ export class CadastrarUsuarioComponent implements OnInit {
 
   usuario:USUARIO
 
-  constructor(private usuarioService:UsuarioService) { 
+  constructor(private usuarioService:FirestoreUsuarioService) { 
     this.usuario = new USUARIO()
   }
 
   ngOnInit(): void {
   }
   inserirUsuario(){
-    this.usuarioService.inserir(this.usuario).subscribe(
+    this.usuarioService.cadastrar(this.usuario).subscribe(
       usuario => console.log(usuario)
     )
   }

@@ -1,3 +1,4 @@
+import { FirestoreImovelService } from './../../share/services/firestore-imovel.service';
 import { Imovel } from './../../share/imovel';
 import { USUARIO } from './../../share/usuario';
 import { ImovelService } from './../../share/services/imovel.service';
@@ -16,17 +17,15 @@ export class ImovelCadasEnderecoComponent implements OnInit {
   imovel :Imovel
 
   // imovel: Imovel
-  constructor( private imovelService:ImovelService) {
-      this.imovel = new Imovel()
+  constructor( private imovelService:FirestoreImovelService) {
+      this.imovel = imovelService.getImovel()
      }
 
 
   ngOnInit(): void {
   }
 
-  proximo(){
-    this.imovelService.passImovel(this.imovel)
-  }
+  
 
   
 }

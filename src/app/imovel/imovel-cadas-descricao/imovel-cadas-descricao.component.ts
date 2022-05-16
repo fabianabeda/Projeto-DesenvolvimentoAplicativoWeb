@@ -1,3 +1,4 @@
+import { FirestoreImovelService } from './../../share/services/firestore-imovel.service';
 import { Imovel } from './../../share/imovel';
 import { ImovelService } from './../../share/services/imovel.service';
 import { Component, OnInit } from '@angular/core';
@@ -10,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class ImovelCadasDescricaoComponent implements OnInit {
 
   imovel:Imovel
-  constructor(private imovelService:ImovelService) {
+  constructor(private imovelService:FirestoreImovelService) {
     this.imovel = imovelService.getImovel()
    }
 
@@ -18,7 +19,7 @@ export class ImovelCadasDescricaoComponent implements OnInit {
   }
  
   inserirImovel():void{
-    this.imovelService.inserir().subscribe(
+    this.imovelService.cadastrar().subscribe(
       imovel => console.log(imovel)
     );
 

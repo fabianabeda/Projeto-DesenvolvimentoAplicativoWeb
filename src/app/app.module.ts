@@ -9,6 +9,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UsuarioModule } from './usuario/usuario.module';
 
+import { AngularFireModule} from '@angular/fire/compat'
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import {AngularFireAuthModule} from '@angular/fire/compat/auth';
+import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
+import { firebaseConfig } from './../../firebase.config';
 
 
 @NgModule({
@@ -24,6 +29,11 @@ import { UsuarioModule } from './usuario/usuario.module';
     UsuarioModule,
     ImovelModule,
     HttpClientModule,
+
+    AngularFireModule.initializeApp(firebaseConfig.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
