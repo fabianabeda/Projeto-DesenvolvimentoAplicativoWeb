@@ -26,5 +26,8 @@ export class FirestoreImovelService {
     return this.imovel
   }
 
+  listar():Observable<Imovel[]>{
+    return this.colecaoImoveis.valueChanges({idField:'id'})
+  }
   
 }

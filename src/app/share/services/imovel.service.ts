@@ -35,5 +35,7 @@ export class ImovelService {
     return this.httpCliente.post<Imovel>(this.url,this.imovel)
   }
 
+  
+
 
 }
