@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 
 export class ImovelService {
   
-  url = 'http://localhost:3000/imoveis';
+  url = 'http://localhost:8080/imoveis';
   imovel: Imovel;
   // imoveis: Array<Imovel>;
 
