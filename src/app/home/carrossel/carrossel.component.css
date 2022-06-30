@@ -1,0 +1,22 @@
+
+.carrossel{
+    padding: 15px 0;
+    overflow-x: hidden;
+    display: flex;
+}
+.carrossel-cont{
+    display: flex;
+    
+}
+
+.item{
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 10px;
+    height: 100px;
+    width: 80px;
+    
+}
+
+.item + .item{
+    margin-left: 5px;
+}
