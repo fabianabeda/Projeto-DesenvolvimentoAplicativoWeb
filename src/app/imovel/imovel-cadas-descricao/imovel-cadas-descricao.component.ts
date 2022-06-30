@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class ImovelCadasDescricaoComponent implements OnInit {
 
   imovel:Imovel
-  constructor(private imovelService:FirestoreImovelService) {
+  constructor(private imovelService:ImovelService) {
     this.imovel = imovelService.getImovel()
    }
 
@@ -19,7 +19,7 @@ export class ImovelCadasDescricaoComponent implements OnInit {
   }
  
   inserirImovel():void{
-    this.imovelService.cadastrar().subscribe(
+    this.imovelService.inserir().subscribe(
       imovel => console.log(imovel)
     );
 

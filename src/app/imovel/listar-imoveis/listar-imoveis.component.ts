@@ -12,7 +12,7 @@ export class ListarImoveisComponent implements OnInit {
 
   imoveis: Array<Imovel>;
 
-  constructor(private imovelService:FirestoreImovelService) { 
+  constructor(private imovelService:ImovelService) { 
     this.imoveis = new Array<Imovel>()
   }
   

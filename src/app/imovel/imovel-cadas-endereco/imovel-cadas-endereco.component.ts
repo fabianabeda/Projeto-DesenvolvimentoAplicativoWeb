@@ -15,10 +15,8 @@ import { Component, OnInit } from '@angular/core';
 export class ImovelCadasEnderecoComponent implements OnInit {
 
   imovel :Imovel
-
-  // imovel: Imovel
-  constructor( private imovelService:FirestoreImovelService) {
-      this.imovel = imovelService.getImovel()
+  constructor( private imovelService:ImovelService) {
+      this.imovel = this.imovelService.getImovel()
      }
 
 

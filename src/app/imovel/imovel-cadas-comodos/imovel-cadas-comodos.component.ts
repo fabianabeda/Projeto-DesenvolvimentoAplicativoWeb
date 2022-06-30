@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImovelCadasComodosComponent implements OnInit {
   imovel:Imovel
-  constructor(private imovelService:FirestoreImovelService) {
+  constructor(private imovelService:ImovelService) {
     this.imovel = this.imovelService.getImovel()
   }
 
