@@ -1,7 +1,20 @@
 
-<div></div>
+<div>
+    <div class="topo-perfil">
+        <div class="foto-perfil">
+            <mat-icon>
+                person
+            </mat-icon>
+        </div>
+        <div class="nome-perfil"><span>Nome do usuario</span></div>
+    </div>
+</div>
 
 
-<mat-card>
-    <button mat-raised-button>Cadastrar imoveis </button>
+<mat-card class="perfil-content">
+    <mat-card-content class="perfil-opcoes">
+        <button mat-raised-button [routerLink]="['/cadastro-imovel-endereco']">Cadastrar imoveis </button>
+        <button mat-raised-button [routerLink]="['/']">Imoveis Cadastrados </button>
+        <button mat-raised-button [routerLink]="['/']">Reservas </button>
+    </mat-card-content>
 </mat-card>

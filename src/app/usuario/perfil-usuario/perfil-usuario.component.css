@@ -1,0 +1,48 @@
+.topo-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.topo-perfil .foto-perfil{
+    height: 150px;
+    width: 150px;
+    border: 1px solid;
+    border-radius:50% ;
+    background: #fff;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo-perfil .foto-perfil .mat-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    opacity: 0.5;
+}
+
+.topo-perfil .nome-perfil{
+    padding: 20px 0 10px;
+}
+
+.topo-perfil .nome-perfil span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.perfil-content .perfil-opcoes{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.perfil-content .perfil-opcoes button{
+    margin-bottom: 10px;
+}
