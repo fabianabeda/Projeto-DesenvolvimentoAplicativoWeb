@@ -12,6 +12,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { RouterModule } from '@angular/router';
+import { ReservasComponent } from './reservas/reservas.component';
+import { ImoveisUsuComponent } from './imoveis-usu/imoveis-usu.component';
 
 
 
@@ -20,6 +22,8 @@ import { RouterModule } from '@angular/router';
     CadastrarUsuarioComponent ,
     LoginUsuarioComponent,
     PerfilUsuarioComponent,
+    ReservasComponent,
+    ImoveisUsuComponent,
     
   ],
   imports: [
