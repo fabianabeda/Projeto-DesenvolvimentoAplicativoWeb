@@ -1,5 +1,5 @@
 import { FirestoreUsuarioService } from './../../share/services/firestore-usuario.service';
-import { USUARIO } from './../../share/usuario';
+import { USUARIO } from '../../share/modelo/usuario';
 import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from 'src/app/share/services/usuario.service';
 

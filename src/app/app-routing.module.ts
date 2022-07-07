@@ -1,3 +1,4 @@
+import { ReservasComponent } from './usuario/reservas/reservas.component';
 import { ListarImoveisComponent } from './imovel/listar-imoveis/listar-imoveis.component';
 import { ContentComponent } from './home/content/content.component';
 
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path:'imoveis',
     component:ListarImoveisComponent
+  },
+  {
+    path:'reservas',
+    component:ReservasComponent
   }
 ];
 

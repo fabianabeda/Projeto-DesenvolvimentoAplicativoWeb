@@ -5,7 +5,7 @@ import { CadastrarUsuarioComponent } from './cadastrar-usuario/cadastrar-usuario
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -35,7 +35,7 @@ import { ImoveisUsuComponent } from './imoveis-usu/imoveis-usu.component';
     MatButtonModule,
     MatInputModule,
     RouterModule,
-    
+    ReactiveFormsModule,
   ],
   exports:[
     CadastrarUsuarioComponent ,

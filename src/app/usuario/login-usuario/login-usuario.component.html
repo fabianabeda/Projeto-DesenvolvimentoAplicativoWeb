@@ -1,22 +1,27 @@
 <div class="login">
-  <mat-card class="card-insercao-usuario">
-  <mat-card-title class="inser-titulo">
-      Faça o login
-  </mat-card-title>
-  <mat-form-field class="inser-input" appearance="outline">
-      <mat-label>e-mail</mat-label>
-      <input placeholder="" matInput>
-  </mat-form-field>
-  <mat-form-field class="inser-input" appearance="outline">
-    <mat-label>Senha</mat-label>
-    <input placeholder="" matInput>
-</mat-form-field>
+    <form class="content-form" [formGroup]="loginForm" (submit)="submitLogin()">
 
-   <mat-card-actions class="inser-botao">
-        <button mat-raised-button [routerLink]="['/perfil-usuario']">Continuar </button>
-    </mat-card-actions>
-    <mat-card-footer class="login-footer">
-    <button [routerLink]="['/cadastrar-usuario']" mat-button>Cadastre-se</button>
-    </mat-card-footer>
-</mat-card>
+        <mat-card class="card-insercao-usuario">
+            <mat-card-title class="inser-titulo">
+                Faça o login
+            </mat-card-title>
+            <mat-form-field class="inser-input" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input placeholder="" formControlName="email" matInput>
+                <mat-error class="mensagem-erro" *ngIf="loginForm.hasError('email') && loginForm.hasError('required')" >Email obrigatório</mat-error>
+            </mat-form-field>
+            <mat-form-field class="inser-input" appearance="outline">
+                <mat-label>Senha</mat-label>
+                <input type="password" formControlName="senha" matInput>
+                <mat-error class="mensagem-erro" *ngIf="loginForm.hasError('email') && loginForm.hasError('required')" >Email obrigatório</mat-error>
+            </mat-form-field>
+            
+            <mat-card-actions class="inser-botao">
+                <button mat-raised-button [disabled]="!loginForm.valid">Continuar </button>
+            </mat-card-actions>
+            <mat-card-footer class="login-footer">
+                <button [routerLink]="['/cadastrar-usuario']" mat-button>Cadastre-se</button>
+            </mat-card-footer>
+        </mat-card>
+    </form>
 </div>

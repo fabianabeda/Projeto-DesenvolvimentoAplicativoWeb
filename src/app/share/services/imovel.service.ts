@@ -1,4 +1,4 @@
-import { Imovel } from './../imovel';
+import { Imovel } from '../modelo/imovel';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';

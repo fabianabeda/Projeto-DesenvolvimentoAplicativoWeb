@@ -1,5 +1,5 @@
 import { from, Observable } from 'rxjs';
-import { Imovel } from './../imovel';
+import { Imovel } from '../modelo/imovel';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Injectable } from '@angular/core';
 

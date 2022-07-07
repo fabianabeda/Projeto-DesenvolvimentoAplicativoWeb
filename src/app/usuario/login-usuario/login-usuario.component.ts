@@ -1,6 +1,9 @@
 import { UsuarioService } from './../../share/services/usuario.service';
-import { USUARIO } from './../../share/usuario';
+import { USUARIO } from '../../share/modelo/usuario';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Login } from 'src/app/share/modelo/login';
  
 @Component({
   selector: 'app-usuario',
@@ -11,13 +14,29 @@ export class LoginUsuarioComponent implements OnInit {
 
   usuario:USUARIO
 
-  constructor(private UsuarioService:UsuarioService) { 
+  loginForm!: FormGroup;
+
+
+
+
+  constructor(
+    private formBuilder: FormBuilder,
+    private UsuarioService:UsuarioService,
+    private router: Router
+    ){ 
     this.usuario = new USUARIO()
   }
 
   ngOnInit(): void {
+    this.loginForm = this.formBuilder.group(
+      {
+        email:['', [Validators.required, Validators.email]],
+        senha:['', [Validators.required]]
+      }
+    )
   }
-  buscarUsuario(){
-    
+  submitLogin(){
+    debugger
+    let dadosLogin = this.loginForm.getRawValue() as Login;
   }
 }

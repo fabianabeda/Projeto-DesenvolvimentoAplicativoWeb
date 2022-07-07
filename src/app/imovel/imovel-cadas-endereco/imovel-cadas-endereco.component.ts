@@ -1,6 +1,6 @@
 import { FirestoreImovelService } from './../../share/services/firestore-imovel.service';
-import { Imovel } from './../../share/imovel';
-import { USUARIO } from './../../share/usuario';
+import { Imovel } from '../../share/modelo/imovel';
+import { USUARIO } from '../../share/modelo/usuario';
 import { ImovelService } from './../../share/services/imovel.service';
 
 import { Component, OnInit } from '@angular/core';

@@ -1,5 +1,5 @@
 import { from, Observable } from 'rxjs';
-import { USUARIO } from './../usuario';
+import { USUARIO } from '../modelo/usuario';
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 
