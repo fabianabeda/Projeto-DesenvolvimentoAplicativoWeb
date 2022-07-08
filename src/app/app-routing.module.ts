@@ -11,6 +11,7 @@ import { ImovelCadasDescricaoComponent } from './imovel/imovel-cadas-descricao/i
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ImoveisUsuComponent } from './usuario/imoveis-usu/imoveis-usu.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   },
   {path:'perfil-usuario',
     component:PerfilUsuarioComponent
+  },
+  {
+    path:'imoveis-usuario',
+    component:ImoveisUsuComponent
   },
   {
     path:'cadastro-imovel-endereco',

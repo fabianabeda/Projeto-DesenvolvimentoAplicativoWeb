@@ -38,6 +38,7 @@ export class LoginUsuarioComponent implements OnInit {
     let dadosLogin = this.loginForm.value as Login;
 
     if (this.usuarioService.loginUsuario(dadosLogin)) {
+      
       this.router.navigate(['/'])
     }
   }

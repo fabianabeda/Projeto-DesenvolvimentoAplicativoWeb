@@ -1,4 +1,7 @@
+import { UsuarioService } from 'src/app/share/services/usuario.service';
 import { Component, OnInit } from '@angular/core';
+import { Imovel } from 'src/app/share/modelo/imovel';
+import { ImovelService } from 'src/app/share/services/imovel.service';
 
 @Component({
   selector: 'app-imoveis-usu',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImoveisUsuComponent implements OnInit {
 
-  constructor() { }
+  imoveis: Array<Imovel>;
 
+  constructor(
+    private imovelService:ImovelService,
+    private usuarioService: UsuarioService
+    ) { 
+    this.imoveis = new Array<Imovel>()
+  }
+  
   ngOnInit(): void {
+    this.imovelService.imoveisUsuario().subscribe(
+      imoveis => this.imoveis = imoveis
+    )
   }
 
 }
