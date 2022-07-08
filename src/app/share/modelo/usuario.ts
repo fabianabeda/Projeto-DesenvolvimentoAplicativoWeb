@@ -10,4 +10,5 @@ export class USUARIO  {
         this.email = usuario.email;
         this.senha = usuario.senha;
     }
+
 }

@@ -16,13 +16,10 @@ export class LoginUsuarioComponent implements OnInit {
 
   loginForm!: FormGroup;
 
-
-
-
   constructor(
     private formBuilder: FormBuilder,
-    private UsuarioService:UsuarioService,
-    private router: Router
+    private usuarioService:UsuarioService,
+    private router: Router,
     ){ 
     this.usuario = new USUARIO()
   }
@@ -36,7 +33,12 @@ export class LoginUsuarioComponent implements OnInit {
     )
   }
   submitLogin(){
-    debugger
-    let dadosLogin = this.loginForm.getRawValue() as Login;
+    // debugger
+    
+    let dadosLogin = this.loginForm.value as Login;
+
+    if (this.usuarioService.loginUsuario(dadosLogin)) {
+      this.router.navigate(['/'])
+    }
   }
 }

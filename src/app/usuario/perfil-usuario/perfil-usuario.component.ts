@@ -1,3 +1,5 @@
+import { USUARIO } from './../../share/modelo/usuario';
+import { UsuarioService } from 'src/app/share/services/usuario.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilUsuarioComponent implements OnInit {
 
-  constructor() { }
-
+  usuario!: USUARIO;
+  
+  constructor(private usuarioService: UsuarioService) {
+    this.usuario = new USUARIO()
+   }
+  
   ngOnInit(): void {
+    this.usuario = this.usuarioService.getLogado()
   }
 
 }

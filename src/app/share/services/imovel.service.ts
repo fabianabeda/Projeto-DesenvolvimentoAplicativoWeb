@@ -1,3 +1,4 @@
+import { UsuarioService } from 'src/app/share/services/usuario.service';
 import { Imovel } from '../modelo/imovel';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -15,7 +16,10 @@ export class ImovelService {
   // imoveis: Array<Imovel>;
 
 
-  constructor( private httpCliente:HttpClient) {
+  constructor(
+    private httpCliente:HttpClient,
+    private usuarioService: UsuarioService
+    ) {
     this.imovel = new Imovel()
   } 
 
@@ -32,10 +36,9 @@ export class ImovelService {
   }
 
   inserir():Observable<Imovel>{
-    return this.httpCliente.post<Imovel>(this.url,this.imovel)
+    this.imovel.locatario = this.usuarioService.getLogado()
+    console.log(this.imovel.locatario.nome)
+    return this.httpCliente.post<Imovel>(`${this.url}/${this.imovel.locatario.id}`,this.imovel)
   }
-
-  
-
 
 }

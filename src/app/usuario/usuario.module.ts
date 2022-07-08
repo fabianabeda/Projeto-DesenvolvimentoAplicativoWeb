@@ -1,8 +1,8 @@
+import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CadastrarUsuarioComponent } from './cadastrar-usuario/cadastrar-usuario.component';
-import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,10 +20,10 @@ import { ImoveisUsuComponent } from './imoveis-usu/imoveis-usu.component';
 @NgModule({
   declarations: [
     CadastrarUsuarioComponent ,
-    LoginUsuarioComponent,
     PerfilUsuarioComponent,
     ReservasComponent,
     ImoveisUsuComponent,
+    LoginUsuarioComponent,
     
   ],
   imports: [
@@ -39,7 +39,6 @@ import { ImoveisUsuComponent } from './imoveis-usu/imoveis-usu.component';
   ],
   exports:[
     CadastrarUsuarioComponent ,
-    LoginUsuarioComponent ,
     PerfilUsuarioComponent,
   ]
 })

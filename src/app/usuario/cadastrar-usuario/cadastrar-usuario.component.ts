@@ -2,6 +2,7 @@ import { FirestoreUsuarioService } from './../../share/services/firestore-usuari
 import { USUARIO } from '../../share/modelo/usuario';
 import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from 'src/app/share/services/usuario.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-usuario',
@@ -12,7 +13,10 @@ export class CadastrarUsuarioComponent implements OnInit {
 
   usuario:USUARIO
 
-  constructor(private usuarioService:UsuarioService) { 
+  constructor(
+    private usuarioService:UsuarioService,
+    private router: Router
+    ) { 
     this.usuario = new USUARIO()
   }
 
@@ -20,7 +24,10 @@ export class CadastrarUsuarioComponent implements OnInit {
   }
   inserirUsuario(){
     this.usuarioService.inserir(this.usuario).subscribe(
-      usuario => console.log(usuario)
+      usuario => {
+        console.log(usuario)
+        this.router.navigate(['/'])
+      }
     )
   }
 

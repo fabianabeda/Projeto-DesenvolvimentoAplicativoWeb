@@ -1,3 +1,4 @@
+import { USUARIO } from './usuario';
 export class Imovel{
 
     id?:string
@@ -12,6 +13,7 @@ export class Imovel{
     garagem?:string;
     capacidade?:string;
     descricao?:string;
+    locatario?:USUARIO;
 
     constructor(id?:string,imovel:Imovel = {}){
         this.id = id;
@@ -26,5 +28,6 @@ export class Imovel{
         this.garagem = imovel.garagem
         this.capacidade = imovel.capacidade
         this.descricao = imovel.descricao
+        this.locatario = imovel.locatario
     }
 }
